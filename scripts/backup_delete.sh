@@ -1,4 +1,8 @@
 #! /bin/bash
 
-FIND_BACKUP="find /var/save/backup/ -name '*.gz' "
-# weitere Zeilen des Scripts folgen
+PATH_BACKUP="find /var/save/backup/ -name '*.gz' "
+# gelöschte Backups_name speichern
+# aktueller Timestamp , dann älter als 7 Tage
+# diese Prüfen und dann löschen
+
+
