@@ -1,3 +1,4 @@
 #! /bin/bash
 
-FIND="find /var/save/backup/ -name"
+FIND_BACKUP="find /var/save/backup/ -name '*.gz' "
+# weitere Zeilen des Scripts folgen
