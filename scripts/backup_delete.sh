@@ -1,10 +1,7 @@
 #! /bin/bash
 
-BACKUPS_DIR="find /var/save/backup/ -name '*.gz' "
-# gelöschte Backups_name speichern
-# aktueller Timestamp , dann älter als 7 Tage
-# diese Prüfen und dann löschen
+# Delete backups which are older then 7 days on NFS
 
-cd $BACKUPS_DIR
-
+BACKUPS_DIR="/nfs-export/www/save/backup_mysql/"
+find $BACKUPS_DIR -type f -mtime +6 -name '*.gz' -exec rm {} \;
 
