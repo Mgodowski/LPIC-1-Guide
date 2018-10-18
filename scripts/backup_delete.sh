@@ -5,4 +5,3 @@
 BACKUPS_DIR="/nfs-export/www/save/backup_mysql/"
 find $BACKUPS_DIR -type f -mtime +6 -name '*.gz' -exec rm {} \;
 
-
